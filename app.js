@@ -1,8 +1,3 @@
-
-// li.setAttribute("class", "list-group-item d-flex justify-content-between align-items-center");
-
-
-
 //define ui element
 let form = document.querySelector('#task_form');
 let taskInput = document.querySelector('#new_task');
@@ -145,41 +140,26 @@ function removeFromLS(taskItem){
 
 let dateMonthYear = new Date();
 let date = dateMonthYear.getDate();
+let month = dateMonthYear.getMonth();
 let year = dateMonthYear.getFullYear();
 var n = dateMonthYear.getUTCDay();
-//get date
- var month = new Array();
-  month[0] = "January";
-  month[1] = "February";
-  month[2] = "March";
-  month[3] = "April";
-  month[4] = "May";
-  month[5] = "June";
-  month[6] = "July";
-  month[7] = "August";
-  month[8] = "September";
-  month[9] = "October";
-  month[10] = "November";
-  month[11] = "December";
-
-   let months = month[dateMonthYear.getMonth()];
 
 
 if(n==0){
-   document.getElementById('date').innerHTML = "Sunday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Sunday " + date + "/" + month + "/" + year;
 } else if(n==1){
-   document.getElementById('date').innerHTML = "Monday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Monday " + date + "/" + month + "/" + year;
 } else if(n==2){
-   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + month + "/" + year;
 } else if(n==3){
-   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + month + "/" + year;
 } else if(n==4){
-   document.getElementById('date').innerHTML = "Thursday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Thursday " + date + "/" + month + "/" + year;
 } else if(n==5){
-   document.getElementById('date').innerHTML = "Friday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Friday " + date + "/" + month + "/" + year;
 } else if(n==6){
-   document.getElementById('date').innerHTML = "Saturday " + date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = "Saturday " + date + "/" + month + "/" + year;
 } else{
-   document.getElementById('date').innerHTML = date + "/" + months + "/" + year;
+   document.getElementById('date').innerHTML = date + "/" + month + "/" + year;
 
 }
