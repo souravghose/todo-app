@@ -140,7 +140,6 @@ function removeFromLS(taskItem){
 
 let dateMonthYear = new Date();
 let date = dateMonthYear.getDate();
-// let month = dateMonthYear.getMonth();
 let year = dateMonthYear.getFullYear();
 var n = dateMonthYear.getUTCDay();
 
@@ -158,24 +157,24 @@ month[8] = "9";
 month[9] = "10";
 month[10] = "11";
 month[11] = "12";
-var n = month[d.getMonth()];
+var months = month[d.getMonth()];
 
 
 if(n==0){
-   document.getElementById('date').innerHTML = "Sunday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Sunday " + date + "/" + months + "/" + year;
 } else if(n==1){
-   document.getElementById('date').innerHTML = "Monday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Monday " + date + "/" + months + "/" + year;
 } else if(n==2){
-   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + months + "/" + year;
 } else if(n==3){
-   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + months + "/" + year;
 } else if(n==4){
-   document.getElementById('date').innerHTML = "Thursday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Thursday " + date + "/" + months + "/" + year;
 } else if(n==5){
-   document.getElementById('date').innerHTML = "Friday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Friday " + date + "/" + months + "/" + year;
 } else if(n==6){
-   document.getElementById('date').innerHTML = "Saturday " + date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = "Saturday " + date + "/" + months + "/" + year;
 } else{
-   document.getElementById('date').innerHTML = date + "/" + n + "/" + year;
+   document.getElementById('date').innerHTML = date + "/" + months + "/" + year;
 
 }
