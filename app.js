@@ -140,26 +140,42 @@ function removeFromLS(taskItem){
 
 let dateMonthYear = new Date();
 let date = dateMonthYear.getDate();
-let month = dateMonthYear.getMonth();
+// let month = dateMonthYear.getMonth();
 let year = dateMonthYear.getFullYear();
 var n = dateMonthYear.getUTCDay();
 
+var d = new Date();
+var month = new Array();
+month[0] = "1";
+month[1] = "2";
+month[2] = "3";
+month[3] = "4";
+month[4] = "5";
+month[5] = "6";
+month[6] = "7";
+month[7] = "8";
+month[8] = "9";
+month[9] = "10";
+month[10] = "11";
+month[11] = "12";
+var n = month[d.getMonth()];
+
 
 if(n==0){
-   document.getElementById('date').innerHTML = "Sunday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Sunday " + date + "/" + n + "/" + year;
 } else if(n==1){
-   document.getElementById('date').innerHTML = "Monday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Monday " + date + "/" + n + "/" + year;
 } else if(n==2){
-   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + n + "/" + year;
 } else if(n==3){
-   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + n + "/" + year;
 } else if(n==4){
-   document.getElementById('date').innerHTML = "Thursday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Thursday " + date + "/" + n + "/" + year;
 } else if(n==5){
-   document.getElementById('date').innerHTML = "Friday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Friday " + date + "/" + n + "/" + year;
 } else if(n==6){
-   document.getElementById('date').innerHTML = "Saturday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Saturday " + date + "/" + n + "/" + year;
 } else{
-   document.getElementById('date').innerHTML = date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = date + "/" + n + "/" + year;
 
 }
