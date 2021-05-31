@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#add_task {
+    padding: 30px 0px;
+    margin: 10px 0px;
+}
+
+.form-control {
+    padding: 12px 17px;
+}
+
+.btn-primary {
+    padding: 12px 20px;
+}
+
+
+.list-group-item {
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem
+}
+
+ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-top: -1px;
+    width: 50%;
+}
+
+ul li:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+ul li:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
