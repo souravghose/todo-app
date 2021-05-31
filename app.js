@@ -162,24 +162,24 @@ var n = dateMonthYear.getUTCDay();
   month[10] = "November";
   month[11] = "December";
 
-   let month = month[dateMonthYear.getMonth()];
+   let months = month[dateMonthYear.getMonth()];
 
 
 if(n==0){
-   document.getElementById('date').innerHTML = "Sunday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Sunday " + date + "/" + months + "/" + year;
 } else if(n==1){
-   document.getElementById('date').innerHTML = "Monday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Monday " + date + "/" + months + "/" + year;
 } else if(n==2){
-   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Tuesday " + date + "/" + months + "/" + year;
 } else if(n==3){
-   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Wednesday " + date + "/" + months + "/" + year;
 } else if(n==4){
-   document.getElementById('date').innerHTML = "Thursday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Thursday " + date + "/" + months + "/" + year;
 } else if(n==5){
-   document.getElementById('date').innerHTML = "Friday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Friday " + date + "/" + months + "/" + year;
 } else if(n==6){
-   document.getElementById('date').innerHTML = "Saturday " + date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = "Saturday " + date + "/" + months + "/" + year;
 } else{
-   document.getElementById('date').innerHTML = date + "/" + month + "/" + year;
+   document.getElementById('date').innerHTML = date + "/" + months + "/" + year;
 
 }
