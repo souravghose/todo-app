@@ -60,3 +60,8 @@ span{
     color: white;
     padding-right: 15px;
 }
+@media only screen and (max-width: 767px){
+.mb-sm{
+    margin-bottom: 15px;
+    }
+}
