@@ -1,3 +1,7 @@
+// changin font family
+document.querySelector('body').style.fontFamily = "'Poppins', sans-serif";
+
+
 //define ui element
 let form = document.querySelector('#task_form');
 let taskInput = document.querySelector('#new_task');
@@ -178,3 +182,4 @@ if(n==0){
    document.getElementById('date').innerHTML = date + "/" + months + "/" + year;
 
 }
+
