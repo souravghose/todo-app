@@ -4,7 +4,30 @@
     box-sizing: border-box;
 }
 
+/* #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 35px;
+} */
 
+#load_app {
+    min-height: 100%;
+}
+
+.main {
+    overflow: auto;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    height: 95vh;
+}
+
+
+.main::-webkit-scrollbar {
+    width: 0px;
+    background: none;
+}
 
 #add_task {
     padding: 30px 0px;
@@ -56,26 +79,58 @@ ul li:last-child {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-span{
+
+#header span {
     color: white;
     padding-right: 15px;
+    margin-top: -7px;
+    display: block;
 }
-@media (min-width: 576px){
-.mb-sm{
-    margin-bottom: 15px;
+
+#todo_list {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#footer {
+    position: relative;
+    /* margin-top: -100px; */
+    clear: both;
+}
+
+#footer p {
+    margin-top: -15px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background: #000;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#footer p .heart-ico {
+    color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+@media (min-width: 576px) {
+    .mb-sm {
+        margin-bottom: 15px;
     }
 }
 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-    ul li{
-    width: 100%;
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    ul li {
+        width: 100%;
     }
 }
 
-// Small devices (landscape phones, less than 768px)
+/* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-     ul li{
-    width: 100%;
+    ul li {
+        width: 100%;
     }
 }
